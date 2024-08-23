@@ -9,19 +9,20 @@
 </head>
 
 <body>
-     <main class="drawcontainer hide">       <!-- if game draws -->
+    <main class="drawcontainer hide"> <!-- if game draws -->
         <div class="draw"></div>
-        <button class="restart">Restart</button>
+        <div class="options">
+            <button class="newgame" onclick=newGame()>New Game</button>
+        </div>
     </main>
-
-    <main class="winnercontainer hide">         <!-- if wins -->
+    
+    <main class="winnercontainer hide"> <!-- if wins -->
         <div class="windis"></div>
-        <button class="newgame">NEW GAME</button>
+        <button class="newgame" onclick=newGame()>NEW GAME</button>
     </main>
-
-    <main class="container">        <!-- Game design -->
-        <div class="heading">TIC TAC TOE</div>
-        <div class="game">
+    
+    <main class="maincontainer1 hide"> <!-- Single Game design -->
+        <div class="game1">
             <button class="box"></button>
             <button class="box"></button>
             <button class="box"></button>
@@ -32,10 +33,40 @@
             <button class="box"></button>
             <button class="box"></button>
         </div>
-        <button class="reset">Reset</button>
+        <button class="reset" onclick="resetGame()">Reset</button>
     </main>
-
+    <main class="maincontainer2 hide"> <!-- Double Game design -->
+        <div class="game2">
+            <button class="boxes"></button>
+            <button class="boxes"></button>
+            <button class="boxes"></button>
+            <button class="boxes"></button>
+            <button class="boxes"></button>
+            <button class="boxes"></button>
+            <button class="boxes"></button>
+            <button class="boxes"></button>
+            <button class="boxes"></button>
+        </div>
+        <button class="reset" onclick="resetGame()">Reset</button>
+    </main>
+    <!-- Main Menu-->
+    <main class="menu">
+        <div class="heading">TIC TAC TOE</div>
+        <div class="buttons">
+            <button class="btn" onclick=singleplayergame()>Single Player</button>
+            <button class="btn" onclick=doubleplayergame()>Double Player</button>
+        </div>
+    </main>
+    <div class="title hide">
+        
+        <div class="heading main">TIC TAC TOE</div>
+        <button class="home btn" onclick=newGame()>Back to main window</button>
+    </div>
+    
     <script src="tictactoe.js"></script>
+     <!-- <script src="AI gnerated code/js.js"></script> -->
+<div class="leftp"></div>
+<div class="rightp"></div>
 </body>
 
 </html>

@@ -1,27 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
-    background-color: #384D48;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #4a90e2, #14557b);
     color: white;
 }
 
+.center{
+    border: 2px solid #14557b;
+}
+
+
 .winnercontainer{
-    margin: 4vmin;
+    width: 78vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 4vmin;
 }
 .drawcontainer{
-    margin: 4vmin;
     display: flex;
+    width: 78vh;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 4vmin;
 }
-.container{
+.maincontainer1 , .maincontainer2{
+    width: 78vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -29,27 +45,33 @@
 }
 
 .heading{
-    font-size : 10vmin ;
+     font-size: 4rem;
+     text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .windis{
-    margin: 4vmin;
-    font-size : 10vmin ;
+    text-align: center;
+    margin-bottom: 4vmin;
+    font-size : 3rem ;
 }
 .draw{
-    margin: 4vmin;
-    font-size : 10vmin ;
+    text-align: center;
+    margin-bottom: 4vmin;
+    font-size : 3rem ;
 }
 
-.game{
+.game1 ,.game2{
     display: flex;
     flex-wrap: wrap;
     height: 60vmin;
     width: 60vmin;
     margin: 5vmin;
 }
-.box{
-    background-color: #546A76;
+.box, .boxes{
+    color: white;
+    background-color:#0a74da;;
     font-size: 10vmin;
     margin: 0.5vmin;
     height: 19vmin;
@@ -58,31 +80,99 @@
 
 }
 
-.reset{
-    background-color: #A3CEF1;
-    color: black;
+/* .reset{
+    background-color: #054e93;
+    border: solid #033a6d;
+    color: white;
     border-radius: 3vmin;
+    cursor: pointer;
     font-size: 4vmin;
     height: 6.5vmin;
     width: 15vmin;
 }
-.newgame{
-    background-color: #A3CEF1;
-    border-radius: 7vmin;
-    font-size: 4vmin;
-    height: 7vmin;
-    width: 30vmin;
-    color: black;
-}
-.restart{
-    background-color: #A3CEF1;
-    border-radius: 7vmin;
-    font-size: 4vmin;
-    height: 7vmin;
-    width: 30vmin;
-    color: black;
-}
 
+.newgame{
+    background-color: #054e93;
+    border: solid #033a6d;
+    color: white;
+    border-radius: 7vmin;
+    font-size: 4vmin;
+    height: 7vmin;
+    width: 30vmin;
+} */
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .hide{
     display: none; 
 }
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    width: 25rem;
+}
+.btn ,.reset ,.newgame{
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #054e93;
+    border: solid #033a6d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover , .reset:hover , .newgame:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: #034f8a;
+}
+
+.home{
+    position: absolute;
+    right: 10vh;
+    top: 5vh;
+}
+ 
+.main{
+    position: fixed;
+    width: 100%;
+    left: 0vh;
+    top: 3vh;  
+}
+
+
+.leftp , .rightp{
+    position: absolute;
+    z-index: -1;
+    background-image: url("Images/tic-tac-toe-seamless-background-on-dark-blue-illustration-vector.jpg");
+    opacity: 0.5;
+    height: 100vh;
+    width: 70vh;
+}
+
+.leftp{
+    left: 0px;
+}
+
+.rightp{
+    right: 0px;
+}
+
+/* 
+.win-highlight {
+    background-color: #FFD700;
+    color: #000;
+    transition: background-color 0.1s, color 0.1s;
+} */
