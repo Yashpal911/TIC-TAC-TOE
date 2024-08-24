@@ -80,26 +80,6 @@ body {
 
 }
 
-/* .reset{
-    background-color: #054e93;
-    border: solid #033a6d;
-    color: white;
-    border-radius: 3vmin;
-    cursor: pointer;
-    font-size: 4vmin;
-    height: 6.5vmin;
-    width: 15vmin;
-}
-
-.newgame{
-    background-color: #054e93;
-    border: solid #033a6d;
-    color: white;
-    border-radius: 7vmin;
-    font-size: 4vmin;
-    height: 7vmin;
-    width: 30vmin;
-} */
 
 .menu{
     display: flex;
